@@ -15,10 +15,11 @@ do
     if (IfThreeDigit(num) == false) Console.WriteLine("Вы ввели не трехзначное число, попробуйте еще раз!!!");
 } while (IfThreeDigit(num) == false);
 
+if (num < 0) num = -num;
 int secondDigit = (num / 10) % 10;
 Console.WriteLine($"Вторая цифра числа --> {secondDigit}");
 
 Boolean IfThreeDigit(int number)
 {
-    return (number > 99) & (number < 1000);
+    return ((number > 99) & (number < 1000))||((number < -99) & (number > -1000));
 }
