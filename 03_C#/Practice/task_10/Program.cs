@@ -19,7 +19,7 @@ if (num < 0) num = -num;
 int secondDigit = (num / 10) % 10;
 Console.WriteLine($"Вторая цифра числа --> {secondDigit}");
 
-Boolean IfThreeDigit(int number)
+bool IfThreeDigit(int number)
 {
     return ((number > 99) & (number < 1000))||((number < -99) & (number > -1000));
 }
