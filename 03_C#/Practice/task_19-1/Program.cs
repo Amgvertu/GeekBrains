@@ -12,9 +12,9 @@ Console.Clear();
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 if (num < 0) num = -num;
-
-for (int i = 1; i <= HowMuchDigit(num) / 2; i++)
-    if (((num / InDegree(HowMuchDigit(num) - i)) % InDegree(i - i + 1)) == ((num % InDegree(i)) / InDegree(i - 1))) flag = true;
+int dig = HowMuchDigit(num);
+for (int i = 1; i <= dig / 2; i++)
+    if (((num / InDegree(dig - i)) % InDegree(i - i + 1)) == ((num % InDegree(i)) / InDegree(i - 1))) flag = true;
     else flag = false;
 
 if (flag == true) Console.WriteLine("--> Да");
