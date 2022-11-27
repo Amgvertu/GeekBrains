@@ -1,14 +1,14 @@
-﻿// Задача 34: Задайте массив заполненный случайными положительными 
-//            трёхзначными числами. Напишите программу, которая 
-//            покажет количество чётных чисел в массиве.
+﻿// Задача 36: Задайте одномерный массив, заполненный случайными 
+//            числами. Найдите сумму элементов, стоящих на нечётных позициях.
 
-// [345, 897, 568, 234] -> 2
+// [3, 7, 23, 12] -> 19
+// [-4, -6, 89, 6] -> 0
 
 Console.Clear();
 Random len = new Random();
 int[] array = FillArray(100, 1000, len.Next(1, 15));
 PrintArray(array);
-EvenNumberedSum(array);
+EvenNumbered(array);
 
 // Методы
 // Заполнение массива
@@ -36,12 +36,10 @@ void PrintArray(int[] arr)
 }
 
 // Количество четных чисел массива
-void EvenNumberedSum(int[] arr)
+void EvenNumbered(int[] arr)
 {
-    int count = 0;
-    for (int i = 0; i < arr.Length; i++)
-    {
-        if (arr[i] % 2 == 0) count++;
-    }
-    Console.WriteLine($"Кол-во четных элементов: {count}");
+    int sum = 0;
+    for (int i = 1; i < arr.Length; i = i + 2)
+        sum = sum + arr[i];
+    Console.WriteLine($"Сумма элементов, на нечетных позициях: {sum}");
 }
