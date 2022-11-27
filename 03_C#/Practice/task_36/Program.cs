@@ -6,7 +6,7 @@
 
 Console.Clear();
 Random len = new Random();
-int[] array = FillArray(100, 1000, len.Next(1, 15));
+int[] array = FillArray(0, 1000, len.Next(1, 10));
 PrintArray(array);
 EvenNumbered(array);
 
@@ -29,8 +29,8 @@ void PrintArray(int[] arr)
     Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
     {
-        if (i == arr.Length - 1) Console.Write($"{arr[i]}");
-        else Console.Write($"{arr[i]}, ");
+        Console.Write($"{arr[i]}");
+        if (i != arr.Length - 1) Console.Write(", ");
     }
     Console.WriteLine("]");
 }
