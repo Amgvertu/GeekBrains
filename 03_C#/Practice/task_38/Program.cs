@@ -7,13 +7,13 @@ Console.Clear();
 System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
 
 Random len = new Random();
-double[] array = FillArray(100, 1000, len.Next(3, 10));
+double[] array = FillArray(len.Next(3, 10));
 PrintArray(array);
 Console.WriteLine("Разница между Max и Min = "+"{0:0.000}",DiffMaxMin(array));
 
 // Методы
 // Заполнение массива
-double[] FillArray(int min, int max, int length)
+double[] FillArray(int length)
 {
     Random rnd = new Random();
     double[] arr = new double[length];
