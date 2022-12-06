@@ -15,7 +15,7 @@ Console.WriteLine($"--> {CountNum(array)}");
 // Методы
 int[] StringToInt(string str)
 {
-        string[] subSt = str.Split(' ');
+        string[] subSt = str.Split(' ', ',');
         int[] arr = new int[subSt.Length];
         for (int i = 0; i < subSt.Length; i++)
         {
