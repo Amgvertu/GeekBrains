@@ -77,14 +77,6 @@ void PrintMatrix(int[,,] matrix)
     }
 }
 
-
-// Вывод массива
-void PrintArray(int[] arr)
-{
-    for (int i = 0; i < arr.Length; i++)
-        Console.Write("{0,5}", arr[i]);
-}
-
 //Создание массива двухзначных чисел
 int[] CreateTwoDigitArray()
 {
