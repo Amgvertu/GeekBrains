@@ -12,7 +12,6 @@ Console.Clear();
 Random rnd = new Random();
 string? st;
 int[] size;
-bool flag = false;
 do
 {
     Console.Write("Задайте размер матрицы 1 (m n): ");
