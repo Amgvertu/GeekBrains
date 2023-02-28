@@ -9,17 +9,20 @@ Console.Write("Введите натуральное число M : ");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите натуральное число N : ");
 int n = Convert.ToInt32(Console.ReadLine());
-int sum;
-if (m<n) sum = SumNat(0,m,n);
-else sum = SumNat(0, n,m);
-Console.WriteLine($"{sum}");
+int s = 0;
+if (m<n)  s = SumNat(0,m,n);
+else s = SumNat(0,n,m);
+Console.WriteLine($"{s});
+
 //Методы
 int SumNat(int sum, int m, int n)
 {
     if (n<m) return sum;
-    else
+    else 
     {
-        sum = sum + n;
+        sum = sum+n;
         return SumNat(sum, m,n - 1);
-    } 
+    }
+
+
 }
