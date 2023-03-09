@@ -9,3 +9,16 @@
 #     3
 #     -> 1
 
+print("Введите кол-во элементов: ", sep="", end="")
+n = int(input())
+a=list()
+for i in range(0,n):
+    print(f"a[{i}] = ",sep="",end="")
+    a.append(int(input()))
+print(a)
+s=0
+print("Введите X: ", sep="", end="")
+x = int(input())
+for el in a:
+    if el==x: s=s+1
+print(s)
