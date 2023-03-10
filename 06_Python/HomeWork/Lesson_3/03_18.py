@@ -8,3 +8,18 @@
 #     1 2 3 4 5
 #     6
 #     -> 5
+
+
+list_d = [int(input()) for _ in range(int(input()))]
+print(list_d)
+x = int(input())
+mindiff = abs(list_d[0]-x)
+min = list_d[0]
+for el in list_d:
+    if (abs(el-x))<mindiff:
+        print(f"{abs(el-x)}  :  {mindiff}")
+        print (el)
+        mindiff = (abs(el-x))
+        min = el
+print(f"Минимальный элемент: {min}")
+        
