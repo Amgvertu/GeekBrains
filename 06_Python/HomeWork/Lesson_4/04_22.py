@@ -3,3 +3,16 @@
 #            в обоих наборах.
 #            Пользователь вводит 2 числа. n - кол-во элементов первого множества. m - кол-во 
 #            элементов второго множества. Затем пользователь вводит сами элементы множеств.
+
+from random import choices
+
+print("Кол-во элементов 1-го множества:")
+num = int(input())
+list_1 = choices(range(num*2), k=num)
+print("Кол-во элементов 2-го множества:")
+num = int(input())
+list_2 = choices(range(num*2), k=num)
+set_1 = set(list_1+list_2)
+print(list_1)
+print(list_2)
+print(set_1)
