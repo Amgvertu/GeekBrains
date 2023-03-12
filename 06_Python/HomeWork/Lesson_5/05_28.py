@@ -5,3 +5,16 @@
 
 # 2 2
 #     4 
+
+def sum(a, b):
+    if a == 0: return b
+    a -=1
+    b +=1
+    return sum(a,b)
+
+# Основная программа    
+print("Введите число a:", end="")
+a = int(input())
+print("Введите число b:", end="")
+b = int(input())
+print(sum(a,b))
