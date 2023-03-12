@@ -6,10 +6,10 @@
 
 from random import choices
 
-print("Кол-во элементов 1-го множества:")
+print("Кол-во элементов 1-го множества:", end="")
 num = int(input())
 list_1 = choices(range(num*2), k=num)
-print("Кол-во элементов 2-го множества:")
+print("Кол-во элементов 2-го множества:", end="")
 num = int(input())
 list_2 = choices(range(num*2), k=num)
 set_1 = set(list_1+list_2)
