@@ -21,10 +21,9 @@ def glasnum(str):
     return sumglas
 # Основная программа
 text = "пара-ра-рам рам-пам-папам па-ра-па-да"
-textspl = text.split()
-for i in range(len(textspl)):
-    textspl[i] = textspl[i].replace("-","")
 print(text,"\n")
+text = text.replace("-","")
+textspl = text.split()
 glas=list(map(glasnum,textspl))
 bl=list(filter(lambda x: x!=glas[0],glas ))
 if (len(bl)==0): print("Парам пам-пам")
