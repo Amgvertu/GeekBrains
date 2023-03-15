@@ -10,3 +10,22 @@
 
 # **Ввод:** пара-ра-рам рам-пам-папам па-ра-па-да    
 # **Вывод:** Парам пам-пам  
+
+def glasnum(str):
+    mark_gl = ['А', 'Е', 'И', 'О', 'У', 'Ё', 'Я', 'Ы', 'Э', 'Ю']
+    sumglas = 0
+    for i in range(len(str)):
+        for j in range(len(mark_gl)):
+            if str[i].upper() == mark_gl[j]:
+                sumglas +=1
+    return sumglas
+# Основная программа
+text = "пара-ра-рам рам-пам-папам па-ра-па-да"
+textspl = text.split()
+for i in range(len(textspl)):
+    textspl[i] = textspl[i].replace("-","")
+print(text,"\n")
+glas=list(map(glasnum,textspl))
+bl=list(filter(lambda x: x!=glas[0],glas ))
+if (len(bl)==0): print("Парам пам-пам")
+else: print("Пам парам")
