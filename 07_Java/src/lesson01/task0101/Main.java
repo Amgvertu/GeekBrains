@@ -3,11 +3,11 @@ package lesson01.task0101;
 import java.util.Scanner;
 
 public class Main {
-     // Р’С‹С‡РёСЃР»РёС‚СЊ n-РѕРµ С‚СЂРµСѓРіРѕР»СЊРЅРѕРіРѕ С‡РёСЃР»Рѕ (СЃСѓРјРјР° С‡РёСЃРµР» РѕС‚ 1 РґРѕ n), n! (РїСЂРѕРёР·РІРµРґРµРЅРёРµ С‡РёСЃРµР» РѕС‚ 1 РґРѕ n)
+     // Вычислить n-ое треугольного число (сумма чисел от 1 до n), n! (произведение чисел от 1 до n)
         public static void main(String[] args) {
             int sum = 0;
             int multi = 1;
-            System.out.print("Р’РІРµРґРёС‚Рµ n:");
+            System.out.print("Введите n:");
             Scanner scanner = new Scanner(System.in);
             int n = scanner.nextInt();
             scanner.close();
@@ -15,7 +15,7 @@ public class Main {
                 sum = sum + i;
                 multi = multi * i;
             }
-            System.out.println(n+"-РѕРµ С‚СЂРµСѓРіРѕР»СЊРЅРѕРµ С‡РёСЃР»Рѕ = "+sum);
+            System.out.println(n+"-ое треугольное число = "+sum);
             System.out.println(n+"! = "+multi);
     }
 }
