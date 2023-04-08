@@ -1,0 +1,33 @@
+апр. 08, 2023 9:14:15 PM lesson02.task0201.Main bubbleSort
+INFO: 2   [17, 14, 14, 12, 11, 11]
+апр. 08, 2023 9:14:15 PM lesson02.task0201.Main bubbleSort
+INFO: 3   [14, 17, 14, 12, 11, 11]
+апр. 08, 2023 9:14:15 PM lesson02.task0201.Main bubbleSort
+INFO: 4   [14, 14, 17, 12, 11, 11]
+апр. 08, 2023 9:14:15 PM lesson02.task0201.Main bubbleSort
+INFO: 5   [14, 14, 12, 17, 11, 11]
+апр. 08, 2023 9:14:15 PM lesson02.task0201.Main bubbleSort
+INFO: 6   [14, 14, 12, 11, 17, 11]
+апр. 08, 2023 9:14:15 PM lesson02.task0201.Main bubbleSort
+INFO: 7   [14, 14, 12, 11, 11, 17]
+апр. 08, 2023 9:14:15 PM lesson02.task0201.Main bubbleSort
+INFO: 8   [14, 14, 12, 11, 11, 17]
+апр. 08, 2023 9:14:15 PM lesson02.task0201.Main bubbleSort
+INFO: 9   [14, 12, 14, 11, 11, 17]
+апр. 08, 2023 9:14:15 PM lesson02.task0201.Main bubbleSort
+INFO: 10   [14, 12, 11, 14, 11, 17]
+апр. 08, 2023 9:14:15 PM lesson02.task0201.Main bubbleSort
+INFO: 11   [14, 12, 11, 11, 14, 17]
+апр. 08, 2023 9:14:15 PM lesson02.task0201.Main bubbleSort
+INFO: 12   [12, 14, 11, 11, 14, 17]
+апр. 08, 2023 9:14:15 PM lesson02.task0201.Main bubbleSort
+INFO: 13   [12, 11, 14, 11, 14, 17]
+апр. 08, 2023 9:14:15 PM lesson02.task0201.Main bubbleSort
+INFO: 14   [12, 11, 11, 14, 14, 17]
+апр. 08, 2023 9:14:15 PM lesson02.task0201.Main bubbleSort
+INFO: 15   [11, 12, 11, 14, 14, 17]
+апр. 08, 2023 9:14:15 PM lesson02.task0201.Main bubbleSort
+INFO: 16   [11, 11, 12, 14, 14, 17]
+апр. 08, 2023 9:14:15 PM lesson02.task0201.Main bubbleSort
+INFO: Сортирвка массива закончена за 16 действий 
+
