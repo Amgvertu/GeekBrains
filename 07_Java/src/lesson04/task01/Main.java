@@ -1,10 +1,16 @@
 //Пусть дан LinkedList с несколькими элементами. Реализуйте метод, который вернёет «перевёрнутый» список.
 
+
+
 package lesson04.task01;
 
+import java.util.Collections;
 import java.util.LinkedList;
 
 public class Main {
+
+    //Можно было сделать с помощью
+    //Collections.reverse(list);
 
     public static void main(String[] args) {
         LinkedList<Integer> list = fillList(8);
