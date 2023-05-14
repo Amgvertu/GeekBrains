@@ -35,5 +35,40 @@ public class Laptop {
         return String.format("{brand = %s, color = %s} \n", brand, color);
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (obj == null || obj.getClass() != this.getClass()) {
+            return false;
+        }
+        Laptop laptop = (Laptop)obj;
+        return laptop.brand.equals(this.brand) && laptop.color.equals(this.color);
+    }
 
+    public boolean equalsBrand(Object obj) {
+        if (obj == null || obj.getClass() != this.getClass()) {
+            return false;
+        }
+        Laptop laptop = (Laptop)obj;
+        return laptop.brand.equals(this.brand);
+    }
+
+    public boolean equalsColor(Object obj) {
+        if (obj == null || obj.getClass() != this.getClass()) {
+            return false;
+        }
+        Laptop laptop = (Laptop)obj;
+        return laptop.color.equals(this.color);
+    }
+
+    @Override
+    public int hashCode() {
+        int prime = 31;
+        int result = 1;
+        result = prime * result + ((brand == null? 0:brand.hashCode()));
+        result = prime * result + ((color == null? 0:color.hashCode()));
+        return result;
+    }
 }
